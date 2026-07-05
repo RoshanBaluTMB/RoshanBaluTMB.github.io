@@ -257,6 +257,14 @@ img {
   stroke: var(--accent);
 }
 
+/* hero-inner (780px) only leaves guaranteed clear space beside it once the
+   container itself has room to spare beyond that width */
+@media (max-width: 1099px) {
+  .hero-cluster {
+    display: none;
+  }
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;

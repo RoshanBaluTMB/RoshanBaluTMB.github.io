@@ -48,40 +48,48 @@
   <!-- Hero section -->
   <section id="hero" class="hero" aria-label="Introduction">
     <svg class="hero-bg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-      <!-- connecting spine: "one connected stack" -->
-      <line class="spine" x1="700" y1="58" x2="700" y2="344" stroke-width="1" stroke-dasharray="3 6"/>
+      <!-- aerial: small drone, top-left corner -->
+      <line x1="70" y1="35" x2="54" y2="22" stroke-width="1.5"/>
+      <line x1="70" y1="35" x2="86" y2="22" stroke-width="1.5"/>
+      <line x1="70" y1="35" x2="54" y2="48" stroke-width="1.5"/>
+      <line x1="70" y1="35" x2="86" y2="48" stroke-width="1.5"/>
+      <circle class="o" cx="54" cy="22" r="7" stroke-width="1.5"/>
+      <circle class="o" cx="86" cy="22" r="7" stroke-width="1.5"/>
+      <circle class="o" cx="54" cy="48" r="7" stroke-width="1.5"/>
+      <circle class="o" cx="86" cy="48" r="7" stroke-width="1.5"/>
+      <rect class="o" x="64" y="31" width="12" height="8" rx="2" stroke-width="1.5"/>
+      <circle cx="70" cy="35" r="2"/>
 
-      <!-- aerial: quadcopter -->
-      <line x1="700" y1="90" x2="655" y2="58" stroke-width="2"/>
-      <line x1="700" y1="90" x2="745" y2="58" stroke-width="2"/>
-      <line x1="700" y1="90" x2="655" y2="122" stroke-width="2"/>
-      <line x1="700" y1="90" x2="745" y2="122" stroke-width="2"/>
-      <circle class="o" cx="655" cy="58" r="15" stroke-width="2"/>
-      <circle class="o" cx="745" cy="58" r="15" stroke-width="2"/>
-      <circle class="o" cx="655" cy="122" r="15" stroke-width="2"/>
-      <circle class="o" cx="745" cy="122" r="15" stroke-width="2"/>
-      <rect class="o" x="684" y="82" width="32" height="16" rx="4" stroke-width="2"/>
-      <circle cx="700" cy="90" r="3"/>
+      <!-- right-hand cluster: only shown where hero-inner (780px) guarantees clear space beside it -->
+      <g class="hero-cluster">
+        <!-- connecting spine -->
+        <line class="spine" x1="655" y1="113" x2="700" y2="150" stroke-width="1" stroke-dasharray="3 6"/>
+        <line class="spine" x1="700" y1="193" x2="700" y2="205" stroke-width="1" stroke-dasharray="3 6"/>
 
-      <!-- articulated: robotic arm -->
-      <rect class="o" x="678" y="244" width="44" height="16" rx="3" stroke-width="2"/>
-      <line x1="700" y1="244" x2="700" y2="206" stroke-width="2"/>
-      <circle cx="700" cy="206" r="4"/>
-      <line x1="700" y1="206" x2="748" y2="176" stroke-width="2"/>
-      <circle cx="748" cy="176" r="4"/>
-      <line x1="748" y1="176" x2="764" y2="162" stroke-width="2"/>
-      <line x1="748" y1="176" x2="766" y2="188" stroke-width="2"/>
+        <!-- vision-based inspection -->
+        <path d="M595 50 V25 H620" fill="none" stroke-width="2.5"/>
+        <path d="M690 25 H715 V50" fill="none" stroke-width="2.5"/>
+        <path d="M595 120 V145 H620" fill="none" stroke-width="2.5"/>
+        <path d="M715 120 V145 H690" fill="none" stroke-width="2.5"/>
+        <circle class="o" cx="655" cy="85" r="28" stroke-width="2.5"/>
+        <circle cx="655" cy="85" r="3.5"/>
 
-      <!-- autonomous: mobile robot / AGV -->
-      <line x1="700" y1="310" x2="700" y2="306" stroke-width="2"/>
-      <circle cx="700" cy="303" r="4"/>
-      <rect class="o" x="652" y="310" width="96" height="28" rx="6" stroke-width="2"/>
-      <circle class="o" cx="674" cy="344" r="11" stroke-width="2"/>
-      <circle class="o" cx="726" cy="344" r="11" stroke-width="2"/>
+        <!-- articulated: robotic arm, larger -->
+        <rect class="o" x="665" y="175" width="70" height="18" rx="4" stroke-width="2.5"/>
+        <line x1="700" y1="175" x2="700" y2="150" stroke-width="2.5"/>
+        <circle cx="700" cy="150" r="5"/>
+        <line x1="700" y1="150" x2="750" y2="120" stroke-width="2.5"/>
+        <circle cx="750" cy="120" r="5"/>
+        <line x1="750" y1="120" x2="770" y2="105" stroke-width="2.5"/>
+        <line x1="750" y1="120" x2="772" y2="132" stroke-width="2.5"/>
 
-      <!-- sparse corner accents -->
-      <circle cx="612" cy="40" r="2.5"/>
-      <circle cx="788" cy="360" r="2.5"/>
+        <!-- autonomous: AMR, larger -->
+        <line x1="700" y1="209" x2="700" y2="213" stroke-width="2.5"/>
+        <circle cx="700" cy="205" r="4"/>
+        <rect class="o" x="615" y="213" width="170" height="32" rx="6" stroke-width="2.5"/>
+        <circle class="o" cx="650" cy="261" r="13" stroke-width="2.5"/>
+        <circle class="o" cx="750" cy="261" r="13" stroke-width="2.5"/>
+      </g>
     </svg>
 
     <div class="container hero-inner">
