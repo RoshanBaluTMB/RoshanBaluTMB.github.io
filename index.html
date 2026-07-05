@@ -47,40 +47,39 @@
 
   <!-- Hero section -->
   <section id="hero" class="hero" aria-label="Introduction">
-    <svg class="hero-bg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-      <!-- aerial: small drone, top-left corner -->
-      <line x1="70" y1="35" x2="54" y2="22" stroke-width="1.5"/>
-      <line x1="70" y1="35" x2="86" y2="22" stroke-width="1.5"/>
-      <line x1="70" y1="35" x2="54" y2="48" stroke-width="1.5"/>
-      <line x1="70" y1="35" x2="86" y2="48" stroke-width="1.5"/>
-      <circle class="o" cx="54" cy="22" r="7" stroke-width="1.5"/>
-      <circle class="o" cx="86" cy="22" r="7" stroke-width="1.5"/>
-      <circle class="o" cx="54" cy="48" r="7" stroke-width="1.5"/>
-      <circle class="o" cx="86" cy="48" r="7" stroke-width="1.5"/>
-      <rect class="o" x="64" y="31" width="12" height="8" rx="2" stroke-width="1.5"/>
-      <circle cx="70" cy="35" r="2"/>
+    <svg class="hero-bg hero-drone" viewBox="0 0 52 50" aria-hidden="true" focusable="false">
+      <!-- aerial: small drone -->
+      <line x1="26" y1="25" x2="10" y2="12" stroke-width="1.5"/>
+      <line x1="26" y1="25" x2="42" y2="12" stroke-width="1.5"/>
+      <line x1="26" y1="25" x2="10" y2="38" stroke-width="1.5"/>
+      <line x1="26" y1="25" x2="42" y2="38" stroke-width="1.5"/>
+      <circle class="o" cx="10" cy="12" r="7" stroke-width="1.5"/>
+      <circle class="o" cx="42" cy="12" r="7" stroke-width="1.5"/>
+      <circle class="o" cx="10" cy="38" r="7" stroke-width="1.5"/>
+      <circle class="o" cx="42" cy="38" r="7" stroke-width="1.5"/>
+      <rect class="o" x="20" y="21" width="12" height="8" rx="2" stroke-width="1.5"/>
+      <circle cx="26" cy="25" r="2"/>
+    </svg>
 
-      <!-- right-hand cluster: only shown where hero-inner (780px) guarantees clear space beside it -->
-      <g class="hero-cluster">
-        <!-- connecting spine -->
-        <line class="spine" x1="700" y1="113" x2="700" y2="125" stroke-width="1" stroke-dasharray="3 6"/>
+    <svg class="hero-bg hero-cluster-svg" viewBox="0 0 180 180" aria-hidden="true" focusable="false">
+      <!-- connecting spine -->
+      <line class="spine" x1="90" y1="93" x2="90" y2="113" stroke-width="1" stroke-dasharray="3 6"/>
 
-        <!-- articulated: robotic arm, larger -->
-        <rect class="o" x="665" y="95" width="70" height="18" rx="4" stroke-width="2.5"/>
-        <line x1="700" y1="95" x2="700" y2="70" stroke-width="2.5"/>
-        <circle cx="700" cy="70" r="5"/>
-        <line x1="700" y1="70" x2="750" y2="40" stroke-width="2.5"/>
-        <circle cx="750" cy="40" r="5"/>
-        <line x1="750" y1="40" x2="770" y2="25" stroke-width="2.5"/>
-        <line x1="750" y1="40" x2="772" y2="52" stroke-width="2.5"/>
+      <!-- articulated: robotic arm -->
+      <rect class="o" x="55" y="75" width="70" height="18" rx="4" stroke-width="2.5"/>
+      <line x1="90" y1="75" x2="90" y2="50" stroke-width="2.5"/>
+      <circle cx="90" cy="50" r="5"/>
+      <line x1="90" y1="50" x2="140" y2="20" stroke-width="2.5"/>
+      <circle cx="140" cy="20" r="5"/>
+      <line x1="140" y1="20" x2="160" y2="5" stroke-width="2.5"/>
+      <line x1="140" y1="20" x2="162" y2="32" stroke-width="2.5"/>
 
-        <!-- autonomous: AMR, larger -->
-        <line x1="700" y1="129" x2="700" y2="133" stroke-width="2.5"/>
-        <circle cx="700" cy="125" r="4"/>
-        <rect class="o" x="615" y="133" width="170" height="32" rx="6" stroke-width="2.5"/>
-        <circle class="o" cx="650" cy="181" r="13" stroke-width="2.5"/>
-        <circle class="o" cx="750" cy="181" r="13" stroke-width="2.5"/>
-      </g>
+      <!-- autonomous: AMR -->
+      <line x1="90" y1="109" x2="90" y2="113" stroke-width="2.5"/>
+      <circle cx="90" cy="105" r="4"/>
+      <rect class="o" x="5" y="113" width="170" height="32" rx="6" stroke-width="2.5"/>
+      <circle class="o" cx="40" cy="161" r="13" stroke-width="2.5"/>
+      <circle class="o" cx="140" cy="161" r="13" stroke-width="2.5"/>
     </svg>
 
     <div class="container hero-inner">

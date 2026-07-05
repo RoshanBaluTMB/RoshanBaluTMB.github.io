@@ -226,7 +226,6 @@ img {
 
 .hero-bg {
   position: absolute;
-  inset: 0;
   z-index: 0;
   opacity: 0.35;
   pointer-events: none;
@@ -257,11 +256,29 @@ img {
   stroke: var(--accent);
 }
 
+/* Each graphic is sized and pinned with plain CSS, independent of the
+   hero's real aspect ratio -- no viewBox "cover" scaling, so nothing
+   shifts or gets cropped when the window is resized or maximized. */
+.hero-drone {
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 64px;
+  height: auto;
+}
+
+.hero-cluster-svg {
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 260px;
+  height: auto;
+  display: none;
+}
+
 /* hero-inner (780px) only leaves guaranteed clear space beside it once the
    container itself has room to spare beyond that width */
-@media (max-width: 1099px) {
-  .hero-cluster {
-    display: none;
+@media (min-width: 1100px) {
+  .hero-cluster-svg {
+    display: block;
   }
 }
 
@@ -744,6 +761,12 @@ section {
   :root {
     --space-6: 4rem;
     --space-5: 3rem;
+  }
+
+  .hero-drone {
+    top: 0.75rem;
+    left: 0.75rem;
+    width: 40px;
   }
 
   .nav-links {
