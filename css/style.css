@@ -238,12 +238,23 @@ img {
   }
 }
 
-.hero-bg path {
+.hero-bg path,
+.hero-bg line {
   stroke: var(--accent);
+}
+
+.hero-bg .spine {
+  opacity: 0.6;
 }
 
 .hero-bg circle {
   fill: var(--accent);
+}
+
+.hero-bg rect,
+.hero-bg circle.o {
+  fill: none;
+  stroke: var(--accent);
 }
 
 .hero-inner {

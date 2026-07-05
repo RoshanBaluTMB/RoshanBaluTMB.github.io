@@ -7,6 +7,18 @@
 <meta name="description" content="Portfolio of Roshan Balu T M B — Automation Systems Engineer specializing in industrial machine vision, robotics integration, and MES automation.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roshanbalutmb.github.io/">
+<meta property="og:title" content="Roshan Balu T M B — Mechatronics & Robotics Engineer">
+<meta property="og:description" content="Automation Systems Engineer specializing in industrial machine vision, robotics integration, and MES automation.">
+<meta property="og:image" content="https://roshanbalutmb.github.io/assets/website-thumbnail-linkedin-compact.png">
+<meta property="og:image:width" content="561">
+<meta property="og:image:height" content="374">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roshan Balu T M B — Mechatronics & Robotics Engineer">
+<meta name="twitter:description" content="Automation Systems Engineer specializing in industrial machine vision, robotics integration, and MES automation.">
+<meta name="twitter:image" content="https://roshanbalutmb.github.io/assets/website-thumbnail-linkedin-compact.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -36,17 +48,40 @@
   <!-- Hero section -->
   <section id="hero" class="hero" aria-label="Introduction">
     <svg class="hero-bg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-      <path d="M0 60 H180 L220 100 H400" fill="none" stroke-width="1.5"/>
-      <path d="M0 320 H140 L180 280 H360 L400 320 H800" fill="none" stroke-width="1.5"/>
-      <path d="M800 140 H600 L560 180 H420" fill="none" stroke-width="1.5"/>
-      <path d="M700 40 V140 L660 180" fill="none" stroke-width="1.5"/>
-      <circle cx="220" cy="100" r="4"/>
-      <circle cx="400" cy="100" r="4"/>
-      <circle cx="180" cy="280" r="4"/>
-      <circle cx="400" cy="320" r="4"/>
-      <circle cx="560" cy="180" r="4"/>
-      <circle cx="700" cy="40" r="4"/>
-      <circle cx="660" cy="180" r="4"/>
+      <!-- connecting spine: "one connected stack" -->
+      <line class="spine" x1="700" y1="58" x2="700" y2="344" stroke-width="1" stroke-dasharray="3 6"/>
+
+      <!-- aerial: quadcopter -->
+      <line x1="700" y1="90" x2="655" y2="58" stroke-width="2"/>
+      <line x1="700" y1="90" x2="745" y2="58" stroke-width="2"/>
+      <line x1="700" y1="90" x2="655" y2="122" stroke-width="2"/>
+      <line x1="700" y1="90" x2="745" y2="122" stroke-width="2"/>
+      <circle class="o" cx="655" cy="58" r="15" stroke-width="2"/>
+      <circle class="o" cx="745" cy="58" r="15" stroke-width="2"/>
+      <circle class="o" cx="655" cy="122" r="15" stroke-width="2"/>
+      <circle class="o" cx="745" cy="122" r="15" stroke-width="2"/>
+      <rect class="o" x="684" y="82" width="32" height="16" rx="4" stroke-width="2"/>
+      <circle cx="700" cy="90" r="3"/>
+
+      <!-- articulated: robotic arm -->
+      <rect class="o" x="678" y="244" width="44" height="16" rx="3" stroke-width="2"/>
+      <line x1="700" y1="244" x2="700" y2="206" stroke-width="2"/>
+      <circle cx="700" cy="206" r="4"/>
+      <line x1="700" y1="206" x2="748" y2="176" stroke-width="2"/>
+      <circle cx="748" cy="176" r="4"/>
+      <line x1="748" y1="176" x2="764" y2="162" stroke-width="2"/>
+      <line x1="748" y1="176" x2="766" y2="188" stroke-width="2"/>
+
+      <!-- autonomous: mobile robot / AGV -->
+      <line x1="700" y1="310" x2="700" y2="306" stroke-width="2"/>
+      <circle cx="700" cy="303" r="4"/>
+      <rect class="o" x="652" y="310" width="96" height="28" rx="6" stroke-width="2"/>
+      <circle class="o" cx="674" cy="344" r="11" stroke-width="2"/>
+      <circle class="o" cx="726" cy="344" r="11" stroke-width="2"/>
+
+      <!-- sparse corner accents -->
+      <circle cx="612" cy="40" r="2.5"/>
+      <circle cx="788" cy="360" r="2.5"/>
     </svg>
 
     <div class="container hero-inner">
